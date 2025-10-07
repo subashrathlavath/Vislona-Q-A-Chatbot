@@ -3,6 +3,7 @@ from faq_engine import TFIDF_Engine
 from gemini_engine import Gemini_Engine
 
 st.title("Vislona Chatbot")
+st.subheader("Hi there! 😉")
 
 @st.cache_resource
 def load_engines():
@@ -12,7 +13,7 @@ def load_engines():
 
 faq_engine, gemini_engine = load_engines()
 
-user_query = st.text_input("Ask me anything about Vislona:")
+user_query = st.text_input("Got questions? Drop ‘em — I’ve got answers locked and loaded 😎💥")
 
 if st.button("Ask"):
     if user_query:
