@@ -5,7 +5,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 class Gemini_Engine:
     def __init__(self):
-        self.model = genai.GenerativeModel('gemini-pro')
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
 
     def get_response(self, query):
         try:
