@@ -20,9 +20,9 @@ if st.button("Ask"):
         with st.spinner("Thinking..."):
             faq_response = faq_engine.get_response(user_query)
             if faq_response:
-                st.write("**Answer:**", faq_response)
+                st.write(faq_response)
             else:
                 gemini_response = gemini_engine.get_response(user_query)
-                st.write("**Answer:**", gemini_response)
+                st.write(gemini_response)
     else:
         st.warning("Please enter a question.")
